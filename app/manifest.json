@@ -16,20 +16,17 @@
   },
   "permissions": [
     "tabs",
-    "http://*/*",
-    "https://*/*",
+    "https://*.esa.io/*",
     "storage"
   ],
   "content_scripts": [
     {
       "matches": [
-        "http://*/*",
-        "https://*/*"
+        "https://*.esa.io/*"
       ],
       "js": [
         "scripts/contentscript.js"
       ],
-      "run_at": "document_end",
       "all_frames": false
     }
   ],
