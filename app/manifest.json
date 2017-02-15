@@ -25,7 +25,8 @@
         "https://*.esa.io/*"
       ],
       "js": [
-        "scripts/contentscript.js"
+        "scripts/contentscript.js",
+        "bower_components/velocity/velocity.min.js"
       ],
       "all_frames": false
     }

@@ -12,11 +12,13 @@ const setTeamColor = (teamName) => {
     const teams = JSON.parse(items.teams)
     for (const team of teams) {
       if (team.teamName == teamName) {
-        headers[0].style.backgroundColor = team.teamColor
+        Velocity(headers[0], {
+          backgroundColor: team.teamColor
+        }, 1000)
         break
       }
     }
-	})
+  })
 }
 
 const bindings = document.querySelectorAll('[data-team-name]')
