@@ -6,5 +6,11 @@
   "appDescription": {
     "message": "Switch bg color by team in esa.io.",
     "description": "The description of the application"
+  },
+  "button_addTeam": {
+    "message": "Add Team Color"
+  },
+  "button_removeTeam": {
+    "message": "x"
   }
 }

@@ -1,4 +1,12 @@
+@mixin pagesize() {
+  height: 800px;
+  width: 800px;
+}
+
 $padding: 20px;
+
 body {
+  @include pagesize();
   padding: $padding;
 }
+

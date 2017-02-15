@@ -11,10 +11,24 @@
     <!-- endbuild -->
   </head>
   <body>
-    <h1>'Allo, 'Allo!</h1>
+    <div id="app">
+      <h1>{{ locales.appTitle }}</h1>
+      <input v-model="teamName">
+      <input v-model="teamColor" class="jscolor">
+      <button v-on:click="addTeam">{{ locales.addTeam }}</button>
+      <ul>
+        <li v-for="team in teams">
+          <span>{{ team.teamName }}</span> :
+          <span style="color: {{ team.teamColor }}">{{ team.teamColor }}</span>
+          <button v-on:click="removeTeam($index)">{{ locales.removeTeam }}</button>
+        </li>
+      </ul>
+    </div>
 
     <!-- build:js scripts/popup-vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/vue/dist/vue.min.js"></script>
+    <script src="bower_components/jscolor-picker/jscolor.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

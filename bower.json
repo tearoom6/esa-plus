@@ -2,6 +2,9 @@
   "name": "esa-plus",
   "private": true,
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "jscolor-picker": "^2.0.4",
+    "vue": "v1.0.11-csp"
+  },
   "devDependencies": {}
 }
