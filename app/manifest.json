@@ -18,6 +18,7 @@
     "https://*.esa.io/*",
     "storage"
   ],
+  "options_page": "options.html",
   "content_scripts": [
     {
       "matches": [

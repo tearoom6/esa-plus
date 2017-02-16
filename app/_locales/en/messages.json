@@ -7,10 +7,16 @@
     "message": "Switch bg color by team in esa.io.",
     "description": "The description of the application"
   },
+  "button_save": {
+    "message": "Save"
+  },
   "button_addTeam": {
     "message": "Add Team Color"
   },
   "button_removeTeam": {
     "message": "x"
+  },
+  "label_strokeOnDoneTasks": {
+    "message": "Add line-through decoration to done tasks."
   }
 }
