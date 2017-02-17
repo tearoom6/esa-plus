@@ -2,7 +2,7 @@
 
 Add more features to esa.io.
 
-- [Chrome Web Store](https://chrome.google.com/webstore/detail/esa-plus/mamfaeimjhohmgiijfdhbdonbdmpeofc/related)
+- [Chrome Web Store](https://chrome.google.com/webstore/detail/esa-plus/mamfaeimjhohmgiijfdhbdonbdmpeofc)
 - [YouTube Video](https://youtu.be/X7MXNGfU7zw)
 
 
