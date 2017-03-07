@@ -22,5 +22,8 @@
   },
   "label_strokeOnDoneTasks": {
     "message": "Add line-through decoration to done tasks."
+  },
+  "label_replaceFindShortcut": {
+    "message": "Assign [Cmd-f] to focus search box of the esa.io."
   }
 }

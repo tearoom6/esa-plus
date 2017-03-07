@@ -46,6 +46,25 @@ const addStrokeToDoneTasks = () => {
   })
 }
 
+/*
+ * Replace shortcut key
+ */
+const replaceShortcutKey = () => {
+  chrome.storage.sync.get({'optionReplaceFindShortcut': true}, (items) => {
+    document.addEventListener('keydown', (e) => {
+      // Replace [Cmd-f].
+      if (items.optionReplaceFindShortcut && e.metaKey && e.which == 70) {
+        const searchBox = document.getElementById('search_input')
+        if (searchBox) {
+          searchBox.focus()
+          e.stopPropagation()
+          e.preventDefault()
+        }
+      }
+    })
+  })
+}
+
 const bindings = document.querySelectorAll('[data-team-name]')
 if (bindings && bindings.length > 0) {
   // Get attribute value of "[data-team-name]".
@@ -53,4 +72,5 @@ if (bindings && bindings.length > 0) {
   setTeamColor(teamName)
 }
 addStrokeToDoneTasks()
+replaceShortcutKey()
 
