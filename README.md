@@ -13,6 +13,7 @@ Add more features to esa.io.
 - Switch bg color by team.
 - Add line-through decoration to done tasks.
 - Replace [Cmd-f] shortcut key to focus on esa's search box.
+- Switch markdown editor to WYSIWYG mode.
 
 
 ## Develop
