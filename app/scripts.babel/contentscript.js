@@ -76,6 +76,15 @@ const switchToWysiwygEditor = () => {
     const editorBody = document.getElementById('post_body_md')
     if (editorBody) {
       const simplemde = new SimpleMDE({ element: editorBody })
+      const editorForm = document.getElementById('form')
+      if (editorForm) {
+        editorForm.style.width = '100%'
+        editorForm.style.float = 'none'
+      }
+      const previewBlock = document.getElementById('preview')
+      if (previewBlock) {
+        previewBlock.style.display = 'none'
+      }
     }
   })
 }
