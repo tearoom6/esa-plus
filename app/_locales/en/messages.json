@@ -25,5 +25,8 @@
   },
   "label_replaceFindShortcut": {
     "message": "Assign [Cmd-f] to focus search box of the esa.io."
+  },
+  "label_switchToWysiwygEditor": {
+    "message": "Switch markdown editor to WYSIWYG style."
   }
 }

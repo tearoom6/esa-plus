@@ -24,6 +24,12 @@
         </label>
       </div>
       <div>
+        <label>
+          <input type="checkbox" v-model="switchToWysiwygEditor">
+          {{ locales.switchToWysiwygEditor }}
+        </label>
+      </div>
+      <div>
         <button v-on:click="saveOptions">{{ locales.save }}</button>
       </div>
     </div>

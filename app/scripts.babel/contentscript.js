@@ -65,6 +65,21 @@ const replaceShortcutKey = () => {
   })
 }
 
+/*
+ * Switch to WYSIWYG editor
+ */
+const switchToWysiwygEditor = () => {
+  chrome.storage.sync.get({'optionSwitchToWysiwygEditor': true}, (items) => {
+    if (! items.optionSwitchToWysiwygEditor) {
+      return
+    }
+    const editorBody = document.getElementById('post_body_md')
+    if (editorBody) {
+      const simplemde = new SimpleMDE({ element: editorBody })
+    }
+  })
+}
+
 const bindings = document.querySelectorAll('[data-team-name]')
 if (bindings && bindings.length > 0) {
   // Get attribute value of "[data-team-name]".
@@ -73,4 +88,5 @@ if (bindings && bindings.length > 0) {
 }
 addStrokeToDoneTasks()
 replaceShortcutKey()
+switchToWysiwygEditor()
 

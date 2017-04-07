@@ -27,7 +27,11 @@
       ],
       "js": [
         "scripts/contentscript.js",
-        "bower_components/velocity/velocity.min.js"
+        "bower_components/velocity/velocity.min.js",
+        "bower_components/simplemde/dist/simplemde.min.js"
+      ],
+      "css": [
+        "bower_components/simplemde/dist/simplemde.min.css"
       ],
       "all_frames": false
     }
