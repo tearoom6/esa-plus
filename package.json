@@ -30,7 +30,6 @@
     "gulp-zip": "^5.0.0",
     "main-bower-files": "^2.13.1",
     "npm-check-updates": "^3.1.20",
-    "run-sequence": "^2.2.1",
     "wiredep": "^4.0.0"
   },
   "eslintConfig": {
