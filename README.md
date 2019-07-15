@@ -29,20 +29,27 @@ $ yarn
 $ bower install
 ```
 
+### Update dependencies
+
+```sh
+# Update npm packages
+yarn run ncu -u
+```
+
 ### gulp tasks
 
 ```sh
 # Transform updated source written by ES2015 (default option)
-gulp babel
+yarn run gulp babel
 
 # or Using watch to update source continuously
-gulp watch
+yarn run gulp watch
 
 # Make a production version extension
-gulp build
+yarn run gulp build
 
 # Compress your app built by gulp build command
-gulp package
+yarn run gulp package
 ```
 
 
